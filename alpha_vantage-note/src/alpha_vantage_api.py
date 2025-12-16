@@ -13,6 +13,9 @@ import os
 import sys
 import random
 from api_key_helper import load_api_key
+from market_data_dataframe import marketdata_fetch
+
+
 
 
 
@@ -37,11 +40,19 @@ def cmd_symbol_search(keyword):
     print(data)
 
 def cmd_time_series_daily(symbol, outputsize="full"): #outputsize="full" or "compact"
+    """
     import requests
     url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize={outputsize}&apikey={API_KEY}"
     r = requests.get(url)
     data = r.json()
     print(data)
+    """
+    #...................................
+    # Cache Implementation
+    #...................................
+    df = marketdata_fetch(symbol, "alpha_vantage", use_cache=True)
+    print(df.to_json(orient="index", date_format="iso"))
+
 
 
  # 模擬 switch-case 的 dispatch table
