@@ -1,6 +1,12 @@
 [repo](https://github.com/comfyanonymous/ComfyUI)
 
+
 # [Manual Install]()
+安裝目錄:
+   * ComfyUI 的python 環境:  C:\APN\PRJ\AI-Vision\ComfyUI\.venv-win-3.13
+   * ComfyUI 的程式碼:       C:\APN\PRJ\AI-Vision\ComfyUI\ComfyUI
+
+安裝步驟:
 1. python -> 3.13 
    1. py -3.13 -m venv .venv-win-3.13
    2. .\.venv-win-3.13\Scripts\activate.bat
