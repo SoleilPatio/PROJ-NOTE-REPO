@@ -11,5 +11,6 @@ git config --global --unset-all credential.helper
 rm -f ~/.git-credentials
 
 # 3) 改用 cache（比較安全，不會永久寫死）
-git config --global credential.helper cache  ==> 開機消失
-git config --global credential.helper store  ==> 開機存在
+檢查狀態: git config --show-origin --get credential.helper
+Opt1 重開機消失: git config --global credential.helper cache
+Opt2 重開機存在: git config --global credential.helper store 
