@@ -1,5 +1,5 @@
 [repo](https://github.com/comfyanonymous/ComfyUI)
-
+[api doc](https://comfy.icu/docs/api)
 
 # [Manual Install]()
 安裝目錄:
